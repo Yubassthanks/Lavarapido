@@ -1,0 +1,58 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Cliente {
+  id         Int         @id @default(autoincrement())
+  nome       String
+  endereco   String
+  telefone   String
+  email      String      @unique
+  senha      String
+  automoveis Automovel[]
+
+  agendamentos Agendamento[]
+}
+
+model Automovel {
+  id        Int     @id @default(autoincrement())
+  modelo    String
+  placa     String  @unique
+  marca     String
+  clienteId Int // Adicione este campo para representar a associação com um cliente
+  cliente   Cliente @relation(fields: [clienteId], references: [id])
+
+  agendamentos Agendamento[]
+}
+
+model Servico {
+  id           Int           @id @default(autoincrement())
+  nome         String
+  descricao    String
+  preco        Decimal
+  agendamentos Agendamento[]
+}
+
+model Agendamento {
+  id             Int       @id @default(autoincrement())
+  clienteId      Int
+  automovelId    Int
+  servicoId      Int
+  valorTotal     Decimal
+  horarioInicio  DateTime
+  horarioTermino DateTime
+  automovel      Automovel @relation(fields: [automovelId], references: [id])
+  cliente        Cliente   @relation(fields: [clienteId], references: [id], onDelete: Cascade)
+  servico        Servico   @relation(fields: [servicoId], references: [id])
+}
+
+model Mensagem {
+  id       Int    @id @default(autoincrement())
+  nome     String
+  mensagem String
+}

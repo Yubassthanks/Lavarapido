@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../js/owlcarrousel/dist/assets/owl.theme.default.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/logo.png" />
+    <title>Lava-Rápido</title>
+</head>
+
+<body>
+    <header>
+        <h1>CarWash</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#services-section">Serviços</a></li>
+                <li><a href="#AboutUs">Sobre Nós</a></li>
+                <li><a href="#section_form001a">Contato</a></li>
+                <li><a href="../agendamento/index.html" id="link-agendamento">Agendamento</a></li>
+                <li><a href="../login" id="link-login">Login</a></li>
+                <li onclick="logout()" id="link-logout" class="hide visible">Logout</li>
+                <li><a href="../alterar" id="link-alterar" class="hide visible">Alterar</a></li>
+                <li><a href="../cadastro" id="link-cadastro">Cadastre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="carousel">
+            <div class="titulo1">
+                <h1 id="titulo">CarWash</h1>
+                <p>O Maior Lava Rapido de Jaguariuna</p>
+            </div>
+            <div class="carousel-slide"
+                style="background-image: url('../assets/brad-starkey-eP8h7YVhFHk-unsplash.jpg');">
+            </div>
+            <div class="carousel-slide"
+                style="background-image: url('https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1563183740/autoexpress/2017/05/car_photo_438622.jpg');">
+            </div>
+            <div class="carousel-slide" style="background-image: url('../assets/mintosko-V4b2j7f1dfc-unsplash.jpg');">
+            </div>
+        </div>
+    </main>
+
+    <!--Serviços-->
+
+    <section id="services-section" class="service-section">
+        <h2 class="line-title">Serviços</h2>
+        <div class="owl-carousel custom-carousel owl-theme">
+            <div class="item active"
+                style="background-image: url(../../Fronttestwill/assets/Washing-a-Car-scaled-pw3psvd4xuzo6033n97pbt2v64d565es5wlanpwpww.jpeg);">
+                <div class="item-desc">
+                    <h3>Limpeza</h3>
+                    <p>Caso o carro tiver sujeira no assento e manchas no teto,<br> o ideal
+                        mesmo é a
+                        higienização do estofado do carro para eliminar a sujeira toda do banco,<br> teto, porta
+                        malas. <br></p>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(../assets/oficina-para-polimento-com-cristalizacao.jpg);">
+                <div class="item-desc">
+                    <h3>Cristalização</h3>
+                    <p>
+                        A cristalização favorece a estética automotiva.<br> Afinal, quem não quer deixar o carro com
+                        a
+                        pintura mais brilhante,<br> como se estivesse acabado de sair da fábrica?<br>A cristalização
+                        também
+                        oferece mais durabilidade para a tinta do carro e realça a sua beleza.<br> Assim,
+                        conserva-se a
+                        qualidade da pintura.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(../assets/polimento.jpg);">
+                <div class="item-desc">
+                    <h3>Polimento</h3>
+                    <p> No nosso dia a dia o automóvel está sujeito desde pequenas a grandes
+                        avarias,<br> como
+                        manchas causadas pela exposição ao sol e chuva,<br> riscos na pintura causada por pequenas
+                        pedras em
+                        determinadas vias etc<br>Nesse sentido, o polimento de carros se mostra a solução ideal para
+                        todos
+                        os mais diferentes e exigentes perfis de proprietários.<br></p>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(../assets/vintage.jpg);">
+                <div class="item-desc">
+                    <h3>Restauração</h3>
+                    <p>Enquanto muitas pessoas se sentem atraídas por lançamentos de
+                        veículos
+                        zero-quilômetro,<br> quem valoriza a história e os momentos passados acaba encontrando
+                        grande prazer
+                        nos modelos antigos. <br>Além do mais, o próprio processo de restauração gera sensações
+                        únicas nos
+                        proprietários por envolver arte e criatividade em cada etapa.<br></p>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(../assets/washing.jpg);">
+                <div class="item-desc">
+                    <h3>Lavagem</h3>
+                    <p>
+                        Cada vez mais as pessoas veem priorizando lavar e higienizar seus veículos com uma certa
+                        frequência,<br> por isso hoje os lava rápidos tem a oferecer diversos tipos de lavagens de
+                        carro.<br></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!--fim-Serviços-->
+
+    <section id="AboutUs">
+
+        <!--Sobre nós-->
+        <!-- <div class='btn'>WASH</div>
+    <div>
+        <div class='mask'></div>
+        <img src='https://contentservice.mc.reyrey.net/image_v1.0.0/?id=5c2e9fbf-c222-55ab-8374-b364319b6961&637523709805835730' />
+    </div>
+    <div class='water'></div>
+</div> -->
+
+
+
+        <div class="custom-section">
+            <h1>Sobre Nós</h1>
+            <p>Bem-vindo à nossa página "Sobre Nós". Aqui está um pouco sobre quem somos e o que fazemos.</p>
+        </div>
+
+        <div class="custom-section">
+            <h2>Nossa História</h2>
+            <img id="aboutImg" src="../assets/vintage-car-wash-post-card-boston-2-pd.jpg" alt="cliente">
+            <p>Desde o início, em 2007, nosso propósito sempre foi ir além da lavagem de veículos. Eu sabia que
+                poderíamos
+                chegar longe. Sempre acreditei que o que eu procurava como cliente (comprometimento, qualidade e
+                excelência)
+                seria o meu diferencial como empreendedor. No Premiere Lava-rápido, a qualidade é reconhecida nos
+                detalhes e
+                seu veículo é entendido como único. Aqui, você conta com uma gama de soluções em estética automotiva e
+                garantimos o melhor serviço possível. Venha se surpreender com o nosso trabalho!
+                Esperamos por você..</p>
+
+            <h2>Nossa Equipe</h2>
+            <img id="aboutImg" src="../assets/IMG_7040.jpg" alt="equipe">
+            <p>Nossa equipe é composta por profissionais experientes e dedicados em suas respectivas áreas. Estamos
+                comprometidos em fornecer soluções de alta qualidade para nossos clientes.</p>
+
+            <h2>Nossos Valores</h2>
+            <img id="aboutImg" src="../assets/3611_serving-up-customer-satisfaction.webp" alt="cliente">
+            <p>Nosso compromisso com a excelência, integridade e inovação orienta cada aspecto do nosso trabalho.
+                Estamos
+                empenhados em criar um impacto positivo em tudo o que fazemos.</p>
+        </div>
+
+
+    </section>
+    <!--fim-Sobre nós-->
+    <section id="section_form001a">
+        <div class="form001a_text">
+            <div class="form001a_text-span">
+                <span>Contate nos</span>
+            </div>
+            <div class="form001a_text-title">
+                <h3>Escreva nos uma mensagem</h3>
+            </div>
+            <div class="form001a_text-p">
+                <p>Se você tiver alguma dúvida, não hesite em nos enviar uma mensagem. Nós respondemos dentro de 24h</p>
+            </div>
+            <div class="form001_text-list">
+                <div class="form001_text-list--icon">
+                    <span><ion-icon name="location"></ion-icon></span>
+                </div>
+                <div class="form001_text-list--txt">
+                    <span>Rua orlando, 456,centro</span>
+                </div>
+            </div>
+            <div class="form001_text-list">
+                <div class="form001_text-list--icon">
+                    <span><ion-icon name="call"></ion-icon></span>
+                </div>
+                <div class="form001_text-list--txt">
+                    <span>19 98953-213</span>
+                </div>
+            </div>
+            <div class="form001_text-list">
+                <div class="form001_text-list--icon">
+                    <span><ion-icon name="mail"></ion-icon></span>
+                </div>
+                <div class="form001_text-list--txt">
+                    <span>veradcj.fl@hotmail.com</span>
+                </div>
+            </div>
+            <div class="form001a_text-subtitle">
+                <h3>Siga as Nossas Redes Sociais</h3>
+            </div>
+            <div class="form001a_text-socialmedias">
+                <div class="form001a_text-socialmedias--row">
+                    <div class="form001a_text-socialmedias--unit">
+                        <a href="https://facebook.com">
+                            <ion-icon id="iconsSocial" name="logo-facebook">
+                        </a>
+                        </ion-icon>
+                    </div>
+                    <div class="form001a_text-socialmedias--unit">
+                        <a href="https://instagram.com">
+                            <ion-icon id="iconsSocial" name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+
+                    <div class="form001a_text-socialmedias--unit">
+                        <a href="https://twitter.com">
+                            <ion-icon id="iconsSocial" name="logo-twitter"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="form001a_text-subtitle">
+                <h3>Contate nos</h3>
+            </div>
+            <div class="form001a_text-socialmedias">
+                <div class="form001a_text-socialmedias--unit">
+                    <a href="tel:+19998150425">
+                        <ion-icon id="iconsSocial" name="logo-whatsapp"></ion-icon>
+                    </a>
+                </div>
+
+                <div class="form001a_text-socialmedias--unit">
+                    <a href="tel:+19998150425">
+                        <ion-icon id="iconsSocial" name="call"></ion-icon>
+                    </a>
+                </div>
+                <div class="form001a_text-socialmedias--unit">
+                    <a href="mailto:veradcj.fl@hotmail.com">
+                        <ion-icon id="iconsSocial"name="mail-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="form001a_form">
+            <form>
+                <input name="input-name" type="text" class="form001a_input" placeholder="Name" required>
+                <input name="input-email" type="email" class="form001a_input" placeholder="Email" required>
+                <textarea rows="8" class="form001a-message" name="input-message" placeholder="Message"></textarea>
+                <button type="submit" class="form001a-button">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="../js/owlcarrousel/dist/owl.carousel.min.js"></script>
+    <script href="nossos_Servicos.js"></script>
+    <script src="home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agendamento</title>
+</head>
+
+<body>
+    <div class="grad"></div>
+    <div class="header">
+        <div>Agend<span>amento</span></div>
+    </div>
+    <form id="agendamento">
+        <input type="text" disbaled placeholder="cliente-id" id="cliente" required>
+        <input type="text" disabled placeholder="automovel-id" id="automovel">
+        <select id="servico-id"></select>
+        <input type="text" placeholder="valor-total" value="100" id="valor-total">
+        <input type="text" placeholder="Inicio Ex: 13/06/2023" value="10/20/2023" id="horario-inicio">
+        <input type="text" placeholder="Término Ex: 13/06/2023" value="10/21/2023" id="horario-termino">
+        <input class="salvar" type="submit" value="Salvar Agendamento"/>
+    </form>
+</body>
+<script src="agendamento.js"></script>
+
+</html>
