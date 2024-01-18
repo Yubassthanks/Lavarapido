@@ -10,5 +10,8 @@
 - Adicionar um fetch para cadastrar caso o cliente tenha mais de um automóvel.
 - Melhorar o Html
 - adicionar maps
+
 # challenge
 - Tentar adicionar uma biblioteca de carros com as específicações(para considerar valores diferentes para tamanhos de carros diferentes).
+
+# Alterar em brenchs para TS
